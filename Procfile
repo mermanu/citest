@@ -1,1 +1,1 @@
-web:    java -jar target/dependency/jetty-runner.jar --port 5000 target/*.war
+web: java $JAVA_OPTS -jar build/jetty/jetty-runner*.jar --port $PORT build/libs/*.war
